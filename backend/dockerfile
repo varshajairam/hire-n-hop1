@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+COPY /target/rent-0.0.1-SNAPSHOT.jar /rent.jar
+ENTRYPOINT ["java", "-jar","/rent.jar"]
